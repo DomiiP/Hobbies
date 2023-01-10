@@ -32,9 +32,8 @@ if(False):
 
 # Output selected content of stats data to a file (Current blitz stats)
 # You get rating data / Int32 data of date / Relability Deviation data
-if (False):
-    with open('./Chess/chess.txt','w') as f:
-        f.write(json.dumps(x.json()["chess_blitz"]["last"]))
+with open('./Chess/chess.txt','w') as f:
+    f.write(json.dumps(x.json()["chess_blitz"]["last"]))
 
 # Print Blitz date rating in readable format
 # With json, you get the date, which you convert it to int, so it can be converted to time stamp
